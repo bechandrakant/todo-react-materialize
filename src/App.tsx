@@ -8,11 +8,7 @@ export interface ITodo {
 }
 
 function App() {
-  const [todos, setTodos] = useState<ITodo[]>([
-    { id: 1, content: "Buy milk"},
-    { id: 2, content: "Buy Oil"},
-    { id: 3, content: "Buy Vegetables"},
-  ])
+  const [todos, setTodos] = useState<ITodo[]>([])
 
   const deleteTodo = (id: number) => {
     let newTodos = todos.filter(todo => todo.id !== id)
