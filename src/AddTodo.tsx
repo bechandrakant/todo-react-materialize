@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function AddTodo(props: { addTodo: (arg0: string) => void }) {
+const AddTodo = (props: { addTodo: (arg0: string) => void }) => {
   const [content, setContent] = useState('')
 
   const handleContentChange = (e: { target: { value: React.SetStateAction<string> } }) => {
