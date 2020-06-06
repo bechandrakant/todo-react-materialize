@@ -7,7 +7,7 @@ export interface ITodo {
   content: string,
 }
 
-function App() {
+const App = () => {
   const [todos, setTodos] = useState<ITodo[]>([])
 
   const deleteTodo = (id: number) => {
